@@ -17,11 +17,9 @@ $ npm start
 
 瀏覽 **http://localhost:3000/**。
 
-## 使用 Parse API
+## REST API 測試
 
-### REST API 測試
-
-* Creating Objects
+### Creating Objects
 
 Test case:
 
@@ -34,7 +32,7 @@ curl -X POST \
 http://localhost:3000/parse/classes/GameScore
 ```
 
-Responsive:
+Response:
 
 ```
 {"objectId":"B2BjW12yXo","createdAt":"2016-02-04T05:29:35.187Z"}

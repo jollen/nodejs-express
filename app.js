@@ -19,7 +19,8 @@ var api = new ParseServer({
   cloud:  config.parse.cloud + '/main.js',
   appId: config.parse.appId,
   masterKey: config.parse.masterKey,
-  fileKey: config.parse.fileKey
+  fileKey: config.parse.fileKey,
+  restAPIKey: config.parse.restAPIKey
 });
 
 // view engine setup
