@@ -17,6 +17,29 @@ $ npm start
 
 瀏覽 **http://localhost:3000/**。
 
+## 使用 Parse API
+
+### REST API 測試
+
+* Creating Objects
+
+Test case:
+
+```
+curl -X POST \
+-H "X-Parse-Application-Id: 123456789" \
+-H "X-Parse-REST-API-Key: 9d676c364a11d96b8c67e69bf7bbfb82" \
+-H "Content-Type: application/json" \
+-d '{"score":1337,"playerName":"Sean Plott","cheatMode":false}' \
+http://localhost:3000/parse/classes/GameScore
+```
+
+Responsive:
+
+```
+{"objectId":"B2BjW12yXo","createdAt":"2016-02-04T05:29:35.187Z"}
+```
+
 ## Update
 
 2016.02.04:
